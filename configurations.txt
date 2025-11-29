@@ -1,0 +1,5 @@
+Запуск БД Postgresql:
+docker-compose up 
+
+Запуск API:
+uvicorn main:app --reload 
