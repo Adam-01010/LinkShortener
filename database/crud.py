@@ -7,7 +7,6 @@ from sqlalchemy.exc import IntegrityError
 
 from sqlalchemy.exc.asyncio import  AsyncSession
 
-from db.crud import new_session
 
 from exceptions import SlugAlreadyExistsError
 

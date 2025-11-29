@@ -12,6 +12,9 @@ from database.models import Base
 from exceptions import NoLongUrlFoundError, SlugAlreadyExistsError
 from service import generate_short_url, get_url_by_slug 
 
+
+from database.crud import new_session
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     async with engine.begin() as connection:
